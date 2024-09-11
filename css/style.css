@@ -1,0 +1,291 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+.glav{
+  background-color: black;
+}
+
+.wrapper{
+    flex-grow: 1;
+}
+
+.open{
+    display: flex !important;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: #3E424B;
+    color: #FAF6F2;
+    padding: 0 40px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: column;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+}
+
+.nav{
+    color: white;
+    display: flex;
+    width: 800px;
+    padding: 0 40px;
+
+}
+.nav a{
+    color: white;
+
+
+}
+
+.nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+}
+
+.burger span{
+    height: 2px;
+    width: 80%;
+    transform: scale(1);
+    background-color: #FAF6F2;
+}
+
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #FAF6F2;
+    transition: all 0.3s ease 0s;
+}
+
+.burger::before { top: 0 }
+
+.burger::after { bottom: 0 }
+
+
+.burger.active span { transform: scale(0) }
+
+.burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+
+.burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+}
+
+
+@media (max-width: 900px) {
+
+    .burger { display: flex }
+
+    .nav{
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 50px 40px;
+        background-color: black;
+        animation: burgerAnimation 0.4s;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        row-gap: 30px;
+    }
+}
+
+
+.heads{
+  width: 100%;
+  min-height: 400px;
+  background-image: url("../img/2..jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 -200px;
+}
+.heads__wrap{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 500px;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+.heads_img{
+  flex: 1 0 400px;
+
+}
+.heads_img img{
+  width: 100%;
+  border-radius: 10px ;
+  box-shadow: 2px 2px 5px 3px #000;
+}
+.heads__content{
+  color: #fff;
+  font-size: 15px;
+  padding: 30px;
+}
+.heads__content h1{
+  font-size: 48px;
+  padding-bottom: 20px;
+  text-shadow: 8px 5px 13px #000;
+
+}
+
+
+.container {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h1 {
+    padding: 10px 10px 15px;
+    text-align: center;
+    font-size: 20px;
+}
+dl>dt {
+    color: #251f24fa;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.container2{
+margin-top: 30px;
+
+text-align: center;
+
+}
+.white4{
+margin: 0 auto;
+border-radius:20px;
+width: 1250px;
+height: 450px;
+background-color: white;
+box-shadow: 50px;
+}
+.white5{
+margin: 0 auto;
+border-radius:20px;
+width: 1250px;
+height: 1450px;
+background-color: white;
+box-shadow: 50px;
+}
+
+.white6{
+margin: 0 auto;
+border-radius:20px;
+width: 1250px;
+height: 4200px;
+background-color: white;
+box-shadow: 50px;
+}
+
+
+
+
+.block1 img{
+  width: 300px;
+  height: 200px;
+}
+.left {
+   float: left;
+   padding: 0 20px 20px 0;
+}
+
+h2{
+  display: flex;
+  justify-content: flex-start;
+
+}
+
+.special_wrap{
+  margin-top: 100px;
+}
+
+.end1{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+.end2{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+}
+.end{
+  color: white;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+}
+.nav li{
+  text-decoration: none;
+}
+
+.block5 img{
+  width: 500px;
+  height: 600px;
+}
+.block6 img{
+    width: 750px;
+  height: 600px;
+}
+
+.block10 img{
+     width: 700px;
+  height: 600px;
+}
+
+.nanan{
+margin: auto 0;
+
+
+
+}
+.white10{
+  margin: 0 auto;
+border-radius:20px;
+width: 1250px;
+height: 500px;
+background-color: white;
+box-shadow: 50px;
+}
